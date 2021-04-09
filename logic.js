@@ -23,7 +23,7 @@ var input = document.getElementById("ifile");
             
             fr.onload=() => {
                 show.value =fr.result;
-                var allfile =fr.result.replaceAll(/[1234567890.-:,--<>=+'"!#@$%^&*()]/g , '');
+                var allfile =fr.result.replaceAll(/[1234567890.-:,--<>=+'"!][/?#@$%^&*()]/g , '');
                 allfile = allfile.replaceAll(/[\n]/g,'')
                 
                  //allfile = allfile.replaceAll(/\n/g ,'');
